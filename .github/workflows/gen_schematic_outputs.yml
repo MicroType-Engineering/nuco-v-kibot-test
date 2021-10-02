@@ -66,10 +66,10 @@ jobs:
 
       # Actually run KiBot to generate all the files. The KiBot script used is
       # in the .kibot/release.kibot.yaml folder.
-      - name: Generate documentation
+      - name: Generate schematic documentation
         uses: INTI-CMNB/KiBot@v1
         with:
-          config: .kibot/includes/schematic/documentation.kibot.yaml
+          config: .kibot/schematic_outputs.kibot.yaml
           dir: ${{ env.OutputFolder }}
           schema: ${{ env.BaseFileName }}.sch
           board: ${{ env.BaseFileName }}.kicad_pcb
