@@ -5,11 +5,12 @@ kibot:
 
 preflight:
   run_erc: true
-  run_drc: true
+  run_drc: false
+  
   # This is important to set to true so replacement of version and date strings in the release
   # build process works correctly.
   check_zone_fills: true
-  ignore_unconnected: false
+  ignore_unconnected: true
 
 global:
   # Sets the default output filename for all generated files. You likely don't have to change this.
