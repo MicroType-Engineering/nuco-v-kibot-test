@@ -86,10 +86,10 @@ jobs:
       - name: Install zip
         uses: montudor/action-zip@v1
 
-      # Zip all the documentation. Any files in the PCBWay, PDFs, and Renders subfolder
+      # Zip all the documentation. Any files in the PCBWay, PDFs, Renders, and Schematic subfolder
       # are automatically included.
       - name: Zip documentation
-        run: zip -qq -r "../${{ env.BaseFileName }}-fab_outputs.zip" PCBWay PDFs Renders
+        run: zip -qq -r "../${{ env.BaseFileName }}-fab_outputs.zip" PCBWay PDFs Renders Schematic
         working-directory: ${{ env.OutputFolder }}
 
       # Upload all the zip files to the release. 
