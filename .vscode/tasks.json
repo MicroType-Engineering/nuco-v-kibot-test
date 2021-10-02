@@ -11,7 +11,7 @@
         "-c",
         ".kibot/full_outputs.kibot.yaml",
         "-b",
-        "kicad_proj/${workspaceFolderBasename}/${workspaceFolderBasename}.kicad_pcb",
+        "${workspaceFolderBasename}.kicad_pcb",
         "--out-dir",
         "KiBotOutput"
       ],

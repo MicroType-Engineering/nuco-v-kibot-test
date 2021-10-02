@@ -20,7 +20,7 @@ jobs:
   Documentation:
     env:
       # Set this to the base filename of your project.
-      BaseFileName: ultrasonic_humidifier_hw
+      BaseFileName: nuco-v
       # Set this to your local timezone. See https://www.wikiwand.com/en/List_of_tz_database_time_zones for valid strings.
       Timezone: America/New_york
       # Set this to the output folder for all of the generated files. Unless you have a very
@@ -54,8 +54,8 @@ jobs:
         with:
           config: .kibot/includes/pcb/gerbers-pcbway-2layer.kibot.yaml
           dir: ${{ env.OutputFolder }}
-          schema: kicad_proj/${{ env.BaseFileName }}/${{ env.BaseFileName }}.sch
-          board: kicad_proj/${{ env.BaseFileName }}/${{ env.BaseFileName }}.kicad_pcb
+          schema: ${{ env.BaseFileName }}.sch
+          board: ${{ env.BaseFileName }}.kicad_pcb
 
       # Archive all the artifacts from output and attach to the action's results.
       - name: Archive production artifacts
