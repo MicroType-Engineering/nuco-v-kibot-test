@@ -6669,7 +6669,7 @@
     )
   )
 
-  (gr_text "Version: %%version%%\nDate: %%date%%" (at 127 140) (layer F.SilkS)
+  (gr_text "Version: %%version%%\nDate: %%date%%" (at 105.5 113.25 45) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text GND (at 88.3 62.6) (layer F.SilkS) (tstamp 5FBB0A76)
