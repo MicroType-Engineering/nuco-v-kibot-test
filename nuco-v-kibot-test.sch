@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "Nuco-V. STM32-NUCLEO64 compatible board."
-Date ""
-Rev "0.15"
+Date "%%date%%"
+Rev "%%version%%"
 Comp ""
 Comment1 ""
 Comment2 ""

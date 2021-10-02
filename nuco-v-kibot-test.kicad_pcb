@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.8-db9833491~87~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
-    (drawings 181)
+    (drawings 182)
     (tracks 2035)
     (zones 0)
     (modules 141)
@@ -61,7 +61,7 @@
     (pad_to_mask_clearance 0)
     (aux_axis_origin 70 140)
     (grid_origin 70 140)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010f0_ffffffff)
       (usegerberextensions true)
@@ -6669,6 +6669,9 @@
     )
   )
 
+  (gr_text "Version: %%version%%\nDate: %%date%%" (at 127 140) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text GND (at 88.3 62.6) (layer F.SilkS) (tstamp 5FBB0A76)
     (effects (font (size 1 0.9) (thickness 0.2)))
   )
