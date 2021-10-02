@@ -89,14 +89,10 @@ jobs:
       # Zip all the documentation. Any files in the PCBWay, PDFs, and Renders subfolder
       # are automatically included.
       - name: Zip documentation
-        run: zip -qq -r "../${{ env.BaseFileName }}-Documentation.zip" PCBWay PDFs Renders
+        run: zip -qq -r "../${{ env.BaseFileName }}-fab_outputs.zip" PCBWay PDFs Renders
         working-directory: ${{ env.OutputFolder }}
 
-      # Upload all the zip files to the release. Note that the PCBWay zip was automatically created by KiBot
-      # since it doesn't have BOM or position files associated (like JLCPCB does) so the path to the file
-      # to upload is slightly different.
-      # If you are copying this to your own repo you'll want to remove the upload of the MobiFlight-Configuration
-      # zip file.
+      # Upload all the zip files to the release. 
       - name: Upload release files
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
